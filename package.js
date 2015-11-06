@@ -9,8 +9,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.1');
   api.use('ecmascript');
-  api.use('react');
-  api.use('perak:markdown');
+  api.use('react@0.1.13');
+  api.use('perak:markdown@1.0.5');
   api.addFiles('react-markdown.jsx');
   api.export('Markdown', ['client', 'server']);
 });
