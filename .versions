@@ -24,7 +24,7 @@ mongo-id@1.0.1
 observe-sequence@1.0.7
 perak:markdown@1.0.5
 promise@0.5.1
-q42:react-markdown@0.0.1
+q42:react-markdown@0.0.2
 random@1.0.5
 react@0.1.13
 react-meteor-data@0.1.9
