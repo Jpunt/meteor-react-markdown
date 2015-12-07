@@ -1,7 +1,8 @@
 Markdown = React.createClass({
   propTypes: {
     children: React.PropTypes.string.isRequired,
-    element: React.PropTypes.string
+    element: React.PropTypes.string,
+    className: React.PropTypes.string,
   },
 
   getDefaultProps() {
@@ -13,7 +14,7 @@ Markdown = React.createClass({
   render() {
     return (
       <this.props.element
-        className={ this.constructor.displayName }
+        className={ this.props.className || this.constructor.displayName }
         dangerouslySetInnerHTML={ { __html: marked(this.props.children) } }
       />
     );
